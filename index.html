@@ -8,91 +8,136 @@
     <script href="script.js" defer></script>
 </head>
 <body>
+
     <div class="upper-menu">
-        <div class="link"><a href="./index.html">About</a></div>
-        <div class="link"><a href="./about.html">Projects</a></div>
-        <div class="link"><a href="./projects.html">Experiences</a></div>
-        <div class="link"><a href="#">Misc</a></div>
+        <div class="link"><a href="#Home-Section"><img src="img/HouseLogoTrans.png"></a></div>
+        <div class="link"><a href="#Work-Experience"><img src="img/WorkExperienceLogo.png"></a></div>
+        <div class="link"><a href="#Project-Section"><img src="img/Portfolio.png"></a></div>
+        <!-- <div class="link"><a href="#">Misc</a></div> -->
     </div>
 
-    <div class="home-section">
-        <img src="./img/52077029634_ebfcd0ec88_o.jpg">
-        <div class="intro-section">
-            <div class="intro-name">Kevin Le</div>
-            <div class="intro-major">Computer Engineering @ UCI 2027</div>
-            <div class="intro-description">
-                Computer college student pursuing a bachelors in CE. 
-                Passionate about technology and looking for opportunities 
-                to develop in hardware or software.
-            </div>
-            <div class="intro-description">
-                Outside of academics, 
-                I love to be outdoorsy. I like exploring trails through running 
-                and getting stronger through the gym. Its important to 
-                stay healthy alongside hanging out with friends! I also 
-                eating at chicken places. 
+    <main>
+        <div class="home-section" id="Home-Section">
+            <img src="./img/ProfilePic.jpeg">
+            <div class="intro-section">
+                <div class="intro-main">
+                    <div class="intro-name">Kevin Le</div>
+                    <div class="intro-links-section">
+                        <div class="intro-links"><img src="img/linkedin_logo.png"></div>
+                        <div class="intro-links"><img src="img/github_logo.png"></div>
+                        <div class="intro-links"><img src=></div>
+                    </div>
+                </div>
+                
+                <div class="intro-major">Computer Engineering @ UCI 2028</div>
+                <div class="intro-description">
+                    I am an aspiring software developer with a unique background 
+                    working with hardware and software. My previous experiences 
+                    have prepared to be a team player who communicates effectively
+                    and have the technical skills to tackle any challenges.
+                </div>
             </div>
         </div>
-    </div>
 
+        <!-- Work Experience Section -->
+        <div class="experiences-section" id="Work-Experience">
+            <div class="experiences-title">Work Experience</div>
 
-    <div class="projects-section">
-        <div class="projects-title">Projects</div>
-        <div class="cards-section">
-            <div class="cards">
-                <img src="./img/rockpaperscissorlogo.png">
-                <div class="project-title">Rock Paper Scissors</div>
-                <div class="project-description">
-                    A game built using html, css, and javascript.
-                    The game consists of 3 rounds where the user best
-                    against the computer.
-                </div>
-                <div class="project-link"><a href="https://obayreaps.github.io/RockPaperScissors/">Link</a></div>
-            </div>
-            <div class="cards">
-                <img src="./img/etchASketchPicture.png">
-                <div class="project-title">Etch-A-Sketch</div>
-                <div class="project-description">
-                    A game built using html, css, and javascript.
-                    The game allows users to paint on a canvas using various
-                    coloring options, including changing the canvas size. 
-                </div>
-                <div class="project-link"><a href="https://obayreaps.github.io/Etch-A-Sketch/">Link</a></div>
-            </div>
+            <div class="experience-card-section">
 
-            <div class="cards">
-                <img src="./img/solarBoatPhoto.jpg">
-                <div class="project-title">Solar Boat Regatta</div>
-                <div class="project-description">
-                    Led a group of 15 engineers to design a solar powered boat from scratch for an annual competition.
-                    Taught members how to design electrical systems, built the frame, and CADing the entire drivetrain.
+                <div class="experience-card">
+                    <div class="experience-job">Algoverse AI Research</div>
+                    <div class="experience-position">Research Fellow</div>
+                    <summary class="experience-description">
+                        As an AI Research Fellow at Algoverse, I built an end-to-end evaluation pipeline 
+                        to benchmark large language model hallucination and verification performance across 
+                        over 15,000 financial question-answer samples. I designed and conducted large-scale 
+                        verification experiments using Gemini and open-source LLMs, generating structured 
+                        performance metrics including 93.5% accuracy and a 6.5% hallucination rate to analyze 
+                        reliability across numeric, temporal, and obligation-based claims. Through this research, 
+                        I identified model failure patterns and contributed to improving evaluation methodology 
+                        for real-world LLM reliability and benchmarking.
+                    </summary>
+                    <div class="experience-date">Nov 2025 - Present</div>
                 </div>
-                <div class="project-link"><a href="https://chabotcollegeengineering.netlify.app/subpages/solarregattapage">Link</a></div>
-            </div>
 
-            <div class="cards">
-                <img src="./img/ebikePhoto.png">
-                <div class="project-title">E-bike</div>
-                <div class="project-description">
-                    Converted a regular bike into an e-bike by designing the electrical system and connecting it through wiring and soldering.
+                <div class="experience-card">
+                    <div class="experience-job">MathWorks</div>
+                    <div class="experience-position">Project Engineer Intern</div>
+                    <div class="experience-description">
+                        During my MathWorks internship, I developed machine 
+                        learning models for a MATLAB mobile fitness application 
+                        that used IMU sensor data to classify movement and workout 
+                        intensity. I collected and processed over 10,000 seconds of 
+                        multi-sensor data across varied terrain to train and validate 
+                        classification models, improving activity-segment accuracy 
+                        by 45.7% and reducing elevation misclassification by 82.9%. 
+                        I also contributed to building user-facing analytics modules 
+                        within MATLAB App Designer to improve workout tracking and 
+                        injury-prevention insights. Our project was selected as one of 
+                        the top three finalists out of more than twenty intern teams, 
+                        recognized by MathWorks engineers for technical execution and impact.
+                    </div>
+                    <div class="experience-date">Jun-July 2025</div>
                 </div>
-                <div class="project-link"><a href="https://chabotcollegeengineering.netlify.app/subpages/ev">Link</a></div>
-            </div>
 
-            <div class="cards">
-                <img src="./img/cceWebsitePhoto.png">
-                <div class="project-title">Chabot College Engineering Portfolio Site</div>
-                <div class="project-description">
-                    Created an online portfoliio website to display engineering projects created by students. Implemented a submission
-                    form to steamline student submission for project display. 
-                </div>
-                <div class="project-link"><a href="https://chabotcollegeengineering.netlify.app/">Link</a></div>
             </div>
         </div>
-    </div>
 
-    <div class="experiences-section">
-        <div class="experiences-title">Experiences</div>
-    </div>
+        <div class="projects-section" id="Project-Section">
+            <div class="projects-title">Projects</div>
+            <div class="cards-section">
+                <div class="cards">
+                    <img src="./img/rockpaperscissorlogo.png">
+                    <div class="project-title">Rock Paper Scissors</div>
+                    <div class="project-description">
+                        A game built using html, css, and javascript.
+                        The game consists of 3 rounds where the user best
+                        against the computer.
+                    </div>
+                    <div class="project-link"><a href="https://obayreaps.github.io/RockPaperScissors/">Link</a></div>
+                </div>
+                <div class="cards">
+                    <img src="./img/etchASketchPicture.png">
+                    <div class="project-title">Etch-A-Sketch</div>
+                    <div class="project-description">
+                        A game built using html, css, and javascript.
+                        The game allows users to paint on a canvas using various
+                        coloring options, including changing the canvas size. 
+                    </div>
+                    <div class="project-link"><a href="https://obayreaps.github.io/Etch-A-Sketch/">Link</a></div>
+                </div>
+
+                <div class="cards">
+                    <img src="./img/solarBoatPhoto.jpg">
+                    <div class="project-title">Solar Boat Regatta</div>
+                    <div class="project-description">
+                        Led a group of 15 engineers to design a solar powered boat from scratch for an annual competition.
+                        Taught members how to design electrical systems, built the frame, and CADing the entire drivetrain.
+                    </div>
+                    <div class="project-link"><a href="https://chabotcollegeengineering.netlify.app/subpages/solarregattapage">Link</a></div>
+                </div>
+
+                <div class="cards">
+                    <img src="./img/ebikePhoto.png">
+                    <div class="project-title">E-bike</div>
+                    <div class="project-description">
+                        Converted a regular bike into an e-bike by designing the electrical system and connecting it through wiring and soldering.
+                    </div>
+                    <div class="project-link"><a href="https://chabotcollegeengineering.netlify.app/subpages/ev">Link</a></div>
+                </div>
+
+                <div class="cards">
+                    <img src="./img/cceWebsitePhoto.png">
+                    <div class="project-title">Chabot College Engineering Portfolio Site</div>
+                    <div class="project-description">
+                        Created an online portfoliio website to display engineering projects created by students. Implemented a submission
+                        form to steamline student submission for project display. 
+                    </div>
+                    <div class="project-link"><a href="https://chabotcollegeengineering.netlify.app/">Link</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

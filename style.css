@@ -5,16 +5,42 @@
 }
 
 body {
+    display: flex;
     background-color: white;
-    padding: 20px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
 }
 
 /* Nav bar */
 .upper-menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
     display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    /* Adjust background */
+    background: hsla(210, 100%, 90%, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.upper-menu a{
+    text-decoration-line: none;
+    color: black;
+    font-size: 22px;
+}
+
+.upper-menu img {
+    width: 50px;
 }
 
 /* Intro section */
@@ -40,20 +66,34 @@ body {
 }
 
 .intro-major {
-    font-size: 25px;
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
 .intro-description {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    padding-right: 50px;
 }
 
-/* Projects section */
+/* Name and links section */
+.intro-main{
+    display: flex;
+    justify-content: space-between;
+}
 
+.intro-links-section {
+    display: flex;
+    gap: 15px;
+}
+
+.intro-links img{
+    max-width: 45px;
+}
+
+/* Work Experience Section */
 .projects-section, .experiences-section{
     margin: 50px;
-
 }
 
 .projects-title, .experiences-title{
@@ -61,6 +101,41 @@ body {
     text-align: left;
     margin-bottom: 40px;
 }
+
+.experience-card-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-card{
+    border: 2px solid rgba(0, 0, 0, 0.395);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.experience-job{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.experience-position{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.experience-description {
+    font-size: 18px;
+    margin-bottom: 20px;;
+}
+
+.experience-date{
+    font-size: 18px;
+    font-weight: 599;
+}
+
+/* Projects section */
 
 .cards-section {
     display: flex;
